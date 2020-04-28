@@ -1,30 +1,14 @@
 const fastify = require('fastify')({ logger: true })
+const path = require('path')
 
-fastify.route({
-  method: 'GET',
-  url: '/',
-  schema: {
-    //  Requests need querystring with a name parameter
-    querystring: {
-      name: { type: 'string' },
-    },
-    response: {
-      200: {
-        type: 'object',
-        properties: {
-          hello: { type: 'string' },
-          hi: { type: 'string' }
-        }
-      }
-    }
-  },
-  //  This function is executed for every request before the handler is executed
-  preHandler: async (request, reply) => {
-    //  e.g. Check auth
-  },
-  handler: async (request, reply) => {
-    return { hello: 'world', hi: 'mars' }
-  }
+//  Register fastify-static plugin
+fastify.register(require('fastify-static'), {
+  root: path.join(__dirname, 'public'),
+  prefix: '/public/',
+})
+
+fastify.get('/', async (req, res) => {
+  res.sendFile('index.html')
 })
 
 
