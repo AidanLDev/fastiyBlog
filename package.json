@@ -1,0 +1,24 @@
+{
+  "name": "fastifyblog",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000f\u0000a\u0000s\u0000t\u0000i\u0000y\u0000B\u0000l\u0000o\u0000g\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidanLDev/fastiyBlog.git"
+  },
+  "keywords": [],
+  "author": "Aidan Lowson <aidanlowson@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AidanLDev/fastiyBlog/issues"
+  },
+  "homepage": "https://github.com/AidanLDev/fastiyBlog#readme",
+  "dependencies": {
+    "fastify": "^2.14.0",
+    "fastify-static": "^2.7.0"
+  }
+}
