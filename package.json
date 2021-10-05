@@ -19,6 +19,6 @@
   "homepage": "https://github.com/AidanLDev/fastiyBlog#readme",
   "dependencies": {
     "fastify": "^2.14.0",
-    "fastify-static": "^2.7.0"
+    "fastify-static": "^4.2.4"
   }
 }
